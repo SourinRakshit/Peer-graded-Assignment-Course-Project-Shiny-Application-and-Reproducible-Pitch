@@ -1,55 +1,8 @@
-# Peer-graded-Assignment-Course-Project-Shiny-Application-and-Reproducible-Pitch
+Peer-graded-Assignment-Course-Project-Shiny-Application-and-Reproducible-Pitch
+This is an app that helps the users to predict the miles per gallon of their car based on the specifications of the car. You can go to: https://sourinrakshit.shinyapps.io/myApp/ and insert the following variables
 
-# mpg prediction for your car
-========================================================
-author: Christos Tzounis
-date: 02/17/2019
-autosize: true
-
-Overview
-========================================================
-
-This is a presentation about an app that helps the users to predict the miles per gallon of their car based on the specifications of the car.
-
-The variables that we are using for the prediction are the following:
-
-1. Horsepower
-2. Number of cylinders
-3. Transmission type 
-4. Weight of the car.
-
-
-Functionality
-========================================================
-
-The user need to insert the horsepower, number of cylinders, transmission type, weight of the car in 1000 lbs. Then the application is going to filter the data and is going to build a model of the mpg rate of the car based on specifications and the users will get the rate in the main page of their device.
-
-
-Slide With Code
-========================================================
-
-```{r}
-summary(mtcars)
-```
-
-Slide With Plot
-========================================================
-
-```{r, echo=FALSE}
-library(ggplot2)
-plot <- ggplot(data=mtcars, aes(x=hp, y = mpg))+
-            geom_point(aes(color = as.factor(cyl)), alpha = 0.9)
-        plot
-```
-
-Shiny application and files
-========================================================
-
-You can go to: https://sourinrakshit.shinyapps.io/myApp/
-and start working with the app.
-
-The application is build using Shiny package and the source code is in 2 files:
-- `ui.R`
-- `server.R`
-
-Both files can be found here: https://github.com/SourinRakshit/Peer-graded-Assignment-Course-Project-Shiny-Application-and-Reproducible-Pitch
+Horsepower
+Number of cylinders
+Transmission type
+Weight of the car.
+of your car in order to see what is the predicted mpg. The presentation can be found here: https://rpubs.com/sourinrakshit/MPG_Prediction
